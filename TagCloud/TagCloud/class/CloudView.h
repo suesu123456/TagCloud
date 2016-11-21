@@ -43,7 +43,8 @@
 }
 
 - (id)initWithFrame:(CGRect)frame 
-       andNodeCount:(NSInteger)nodeCount;
+       andNodeCount:(NSInteger)nodeCount
+     andPersonArray: (NSArray*)persons;
 
 @property (nonatomic, assign) id<CloudViewDelegate>delegate;
 

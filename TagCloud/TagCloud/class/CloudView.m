@@ -33,12 +33,12 @@
 
 #pragma mark -
 #pragma mark --初始化方法--
-- (id)initWithFrame:(CGRect)frame andNodeCount:(NSInteger)nodeCount
+- (id)initWithFrame:(CGRect)frame andNodeCount:(NSInteger)nodeCount andPersonArray: (NSArray*)persons
 {
     self = [super initWithFrame:frame];
     if (self) {
         
-        CGSize nodeSize = CGSizeMake(25, 25);
+        CGSize nodeSize = CGSizeMake(60, 60);
         
         speedMAX      =  2.0f;//最大移动速度 
         speedMIN      = -2.0f;//最小移动速度 
@@ -63,9 +63,11 @@
             cloudButton.tag = i;
             cloudButton.userInteractionEnabled = NO;
             
-            [cloudButton setTitle:[NSString stringWithFormat:@"%d",i] 
+            [cloudButton setTitle: persons[i][0]
                          forState:UIControlStateNormal];
             
+            [cloudButton setBackgroundImage:persons[i][1] forState: UIControlStateNormal];
+            [cloudButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 50, 0)];
             [cloudButton addTarget:delegate
                             action:@selector(didSelectedNodeButton:)
                   forControlEvents:UIControlEventTouchUpInside];

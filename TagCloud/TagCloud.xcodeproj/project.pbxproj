@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		802221031C0BEDDC00FBD538 /* DCPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 802221001C0BEDDC00FBD538 /* DCPathButton.m */; };
+		802221041C0BEDDC00FBD538 /* DCPathItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 802221021C0BEDDC00FBD538 /* DCPathItemButton.m */; };
+		802221061C0BF0EB00FBD538 /* SFPatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802221051C0BF0EB00FBD538 /* SFPatchView.swift */; };
+		802221081C0BFA1000FBD538 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802221071C0BFA1000FBD538 /* Common.swift */; };
 		80C4198B1C07F16D00320E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4198A1C07F16D00320E21 /* AppDelegate.swift */; };
 		80C4198D1C07F16D00320E21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C4198C1C07F16D00320E21 /* ViewController.swift */; };
 		80C419901C07F16D00320E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C4198E1C07F16D00320E21 /* Main.storyboard */; };
@@ -38,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		802220FF1C0BEDDC00FBD538 /* DCPathButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPathButton.h; path = class/DCPathButton.h; sourceTree = "<group>"; };
+		802221001C0BEDDC00FBD538 /* DCPathButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCPathButton.m; path = class/DCPathButton.m; sourceTree = "<group>"; };
+		802221011C0BEDDC00FBD538 /* DCPathItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPathItemButton.h; path = class/DCPathItemButton.h; sourceTree = "<group>"; };
+		802221021C0BEDDC00FBD538 /* DCPathItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCPathItemButton.m; path = class/DCPathItemButton.m; sourceTree = "<group>"; };
+		802221051C0BF0EB00FBD538 /* SFPatchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFPatchView.swift; sourceTree = "<group>"; };
+		802221071C0BFA1000FBD538 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		80C419871C07F16D00320E21 /* TagCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C4198A1C07F16D00320E21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C4198C1C07F16D00320E21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +98,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		802220FE1C0BEDA100FBD538 /* patch */ = {
+			isa = PBXGroup;
+			children = (
+				802220FF1C0BEDDC00FBD538 /* DCPathButton.h */,
+				802221001C0BEDDC00FBD538 /* DCPathButton.m */,
+				802221011C0BEDDC00FBD538 /* DCPathItemButton.h */,
+				802221021C0BEDDC00FBD538 /* DCPathItemButton.m */,
+			);
+			name = patch;
+			sourceTree = "<group>";
+		};
 		80C4197E1C07F16D00320E21 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +141,7 @@
 				80C419C51C0853AA00320E21 /* BridgeHeader.h */,
 				80C419961C07F16D00320E21 /* Info.plist */,
 				80C419C61C08558000320E21 /* ViewController2.swift */,
+				802221071C0BFA1000FBD538 /* Common.swift */,
 			);
 			path = TagCloud;
 			sourceTree = "<group>";
@@ -145,6 +167,7 @@
 		80C419B81C07F37100320E21 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				802220FE1C0BEDA100FBD538 /* patch */,
 				80C419C81C0856A500320E21 /* CloudButton.h */,
 				80C419C91C0856A500320E21 /* CloudButton.m */,
 				80C419CA1C0856A500320E21 /* CloudView.h */,
@@ -153,6 +176,7 @@
 				80C419C21C08534B00320E21 /* DBSphereView.h */,
 				80C419C31C08534B00320E21 /* DBSphereView.m */,
 				80C419C11C08534B00320E21 /* DBPoint.h */,
+				802221051C0BF0EB00FBD538 /* SFPatchView.swift */,
 			);
 			name = class;
 			sourceTree = "<group>";
@@ -225,13 +249,16 @@
 				TargetAttributes = {
 					80C419861C07F16D00320E21 = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0810;
 					};
 					80C4199A1C07F16D00320E21 = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 80C419861C07F16D00320E21;
 					};
 					80C419A51C07F16D00320E21 = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 80C419861C07F16D00320E21;
 					};
 				};
@@ -292,7 +319,11 @@
 				80C419C71C08558000320E21 /* ViewController2.swift in Sources */,
 				80C419C41C08534B00320E21 /* DBSphereView.m in Sources */,
 				80C419CC1C0856A500320E21 /* CloudButton.m in Sources */,
+				802221041C0BEDDC00FBD538 /* DCPathItemButton.m in Sources */,
+				802221031C0BEDDC00FBD538 /* DCPathButton.m in Sources */,
 				80C419CD1C0856A500320E21 /* CloudView.m in Sources */,
+				802221061C0BF0EB00FBD538 /* SFPatchView.swift in Sources */,
+				802221081C0BFA1000FBD538 /* Common.swift in Sources */,
 				80C4198B1C07F16D00320E21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +473,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = TagCloud/BridgeHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -455,6 +487,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.suesu.TagCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = TagCloud/BridgeHeader.h;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -466,6 +499,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suesu.TagCloudTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TagCloud.app/TagCloud";
 			};
 			name = Debug;
@@ -478,6 +512,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suesu.TagCloudTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TagCloud.app/TagCloud";
 			};
 			name = Release;
@@ -489,6 +524,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suesu.TagCloudUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = TagCloud;
 				USES_XCTRUNNER = YES;
 			};
@@ -501,6 +537,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suesu.TagCloudUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = TagCloud;
 				USES_XCTRUNNER = YES;
 			};
@@ -525,6 +562,7 @@
 				80C419B11C07F16D00320E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80C419B21C07F16D00320E21 /* Build configuration list for PBXNativeTarget "TagCloudTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +571,7 @@
 				80C419B41C07F16D00320E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80C419B51C07F16D00320E21 /* Build configuration list for PBXNativeTarget "TagCloudUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +580,7 @@
 				80C419B71C07F16D00320E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "06B08C0A9D479E7A517F56AB1B1185642AD4AE2D" : 0,
+    "00731AB0EBD23EF90EF9ADE6052EB40C622A9B21" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BD3A6371-7142-4996-BF3E-EE2CEC036FD5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "06B08C0A9D479E7A517F56AB1B1185642AD4AE2D" : "..",
+    "00731AB0EBD23EF90EF9ADE6052EB40C622A9B21" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TagCloud",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TagCloud.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/suesu123456\/TagCloud.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "00731AB0EBD23EF90EF9ADE6052EB40C622A9B21"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/suesu123456\/-swift-alimonyCal.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "06B08C0A9D479E7A517F56AB1B1185642AD4AE2D"
+    }
+  ]
+}
