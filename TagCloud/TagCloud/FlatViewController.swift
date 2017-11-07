@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ViewController2: UIViewController, CloudViewDelegate {
+class FlatViewController: UIViewController, CloudViewDelegate {
     var person: [[AnyObject]] = [["Bili" as AnyObject, UIImage(named: "1")!],
-                                ["peach" as AnyObject, UIImage(named: "2")!],
+                                ["Peach" as AnyObject, UIImage(named: "2")!],
                                 ["Elina" as AnyObject, UIImage(named: "3")!],
                                 ["Caroline" as AnyObject, UIImage(named: "4")!],
                                 ["Xiuna" as AnyObject, UIImage(named: "5")!],
